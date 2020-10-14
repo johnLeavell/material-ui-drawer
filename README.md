@@ -66,3 +66,13 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+
+When bulding React applications I notice that for styling I tend to use two main frameworks.  Material-UI and Bootstrap.  There really isn't a rhyme or reason as to why I prefer one over the other but for this short React tutorial I decided to use Material-Ui for styling.  Also, this React app will use React-Router-Dom for handling the different routes and links
+
+Let's take a look and see what we will be creating today.
+
+(insert a photo of the finished drawer)
+
+(things needed to import from react router)
