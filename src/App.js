@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import { Drawer, List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
+import { Drawer, List, ListItem, ListItemIcon, ListItemText, Container, Typography, } from '@material-ui/core';
 import HomeIcon from '@material-ui/icons/Home';
 import InfoIcon from '@material-ui/icons/Info';
 
@@ -41,10 +41,26 @@ function App() {
           </ListItem>
           </Link>
         </List>
-        
       </Drawer>
-      
-
+      <Switch>
+        <Route exact path='/'>
+        <Container>
+          <Typography variant='h4' gutterBottom>
+            Home
+          </Typography>
+          <Typography>
+          Welcome to Home
+          </Typography>
+        </Container>
+        </Route>
+        <Route exact path='/about'>
+        <Container>
+        <Typography variant='body1' gutterBottom>
+            About
+          </Typography>
+        </Container>
+        </Route>
+      </Switch>
       </div>
     </Router>
   );
